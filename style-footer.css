@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: brandon-grotesque, sans-serif;
+}
+footer{
+    background-color: #e2ebde;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 0 60px 0;
+    align-items: center;
+    font-weight: 100;
+}
+
+footer>div{
+    margin: 0 10px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+img{
+    width: 20wv;
+}
+h4{
+    font-weight: 100;
+}
+    background-color: #e2ebde;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    font-size: 23px;
+    padding-left: 60px;
+    line-height: 40px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-left: -4.5%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 5px;

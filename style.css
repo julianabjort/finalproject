@@ -5,7 +5,13 @@
 body {
     font-family: Brandon Grotesque, sans-serif;
 }
-
+button{
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 /* FONTS */
 h1 {
     font-weight: 400;
@@ -150,11 +156,6 @@ article{
 }
 #viewItem{
     border: 1px solid black;
-    padding: 10px;
-    font-size: 10px;
-    width: 100px;
-    font-weight: 300;
-    text-transform: uppercase;
     background-color: white;
     margin-top: auto;
 }

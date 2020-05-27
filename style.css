@@ -1,25 +1,33 @@
+*{
+    margin: 0;
+}
+
 body {
 
     font-family: Brandon Grotesque, sans-serif;
 }
 
+/* FONTS */
+h3{
 
+}
+h4{
+    font-weight: 100;
+}
+
+/* NAVIGATION BAR */
 .logo {
     float: left;
     width: 30vw;
 }
-
 nav {
     margin: 20px;
 }
-
 .navbar {
     margin: 30px;
     overflow: hidden;
     background-color: none;
-
 }
-
 /* Links inside the navbar */
 .navbar a {
     float: right;
@@ -29,13 +37,11 @@ nav {
     text-align: center;
     text-decoration: none;
 }
-
 /* The dropdown container */
 .dropdown {
     float: right;
     overflow: hidden;
 }
-
 /* Dropdown button */
 .dropdown .dropbtn {
     font-size: 16px;
@@ -47,7 +53,6 @@ nav {
     font-family: inherit;
     margin: 0;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -56,7 +61,6 @@ nav {
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -66,13 +70,30 @@ nav {
     display: block;
     text-align: left;
 }
-
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #e2ebde;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* FOOTER */
+footer{
+    background-color: #e2ebde;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 0 60px 0;
+    align-items: center;
+    font-weight: 100;
+}
+
+footer>div{
+    margin: 0 10px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer-logo{
+    width: 20vw;
 }

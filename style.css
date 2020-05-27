@@ -161,4 +161,7 @@ footer h5 {
     .footer-logo{
         width: 35vw;
     }
+    .rights {
+    grid-area: 4 / 1;
+}
 }

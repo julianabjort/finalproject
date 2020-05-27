@@ -130,6 +130,7 @@ footer > div {
 .rights {
     font-size: 12px;
     text-align: center;
+    grid-area: 2 / 2;
 }
 
 footer h5 {

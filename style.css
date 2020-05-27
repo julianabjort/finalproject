@@ -3,7 +3,6 @@
 }
 
 body {
-
     font-family: Brandon Grotesque, sans-serif;
 }
 
@@ -13,7 +12,10 @@ h3{
 }
 h4{
     font-weight: 100;
+    font-size: 15px;
+    margin: 1.5em 0;
 }
+
 
 /* NAVIGATION BAR */
 .logo {
@@ -87,6 +89,7 @@ footer{
     padding: 60px 0 60px 0;
     align-items: center;
     font-weight: 100;
+    color: gray;
 }
 
 footer>div{
@@ -96,4 +99,35 @@ footer>div{
 }
 .footer-logo{
     width: 20vw;
+    margin-bottom: 1em;
 }
+
+.btn {
+    border: none;
+    padding: 15px 32px;
+    font-size: 10px;
+    width: 300px;
+    color: gray;
+    margin: .2em 0;
+    font-weight: 600;
+}
+.rights{
+    font-size: 12px;
+    margin: 1.5em 0 0;
+}
+
+footer h5{
+    font-weight: 500;
+    margin: 1.5em 0 .5em;
+    font-size: 17px;
+}
+.fa {
+    text-decoration: none;
+    color: white;
+}
+.tiktok {
+    width: 15px;
+    margin: 0 80px;
+}
+
+

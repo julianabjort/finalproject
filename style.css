@@ -5,15 +5,29 @@
 body {
     font-family: Brandon Grotesque, sans-serif;
 }
-button{
+
+button {
     padding: 10px;
     font-size: 10px;
     width: 100px;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 /* FONTS */
+
+p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
 h1 {
+    font-weight: 400;
+}
+
+h3 {
+
+    font-size: 50px;
     font-weight: 400;
 }
 
@@ -98,32 +112,57 @@ nav {
 }
 
 /* GRIDS */
+
 .grid-container {
     display: grid;
-    grid-template-columns: 2;
-    grid-auto-rows: 200px;
+
 }
 
-.row1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 1;
+.grid-container img {
+    width: 100%;
+
+}
+
+.content {
+    text-align: center;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.content p {
+    margin: 20px 100px;
+}
+
+.banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
 }
 
 .row2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
+.row2 img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
 .row3 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
+
+.custom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
 
 /* SHOP */
 main {
@@ -131,7 +170,8 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin: 0 10%;
 }
-article{
+
+article {
     background-color: white;
     display: flex;
     flex-flow: column;
@@ -139,22 +179,26 @@ article{
     text-align: center;
     align-items: center;
 }
-.oneImage{
+
+.oneImage {
     width: 200px;
     padding: 20px;
 }
+
 .banner {
     height: 40vh;
     display: flex;
     overflow: hidden;
 }
+
 .bannerImg {
     flex-shrink: 0;
     min-height: 100%;
     max-width: 100%;
     object-fit: cover;
 }
-#viewItem{
+
+#viewItem {
     border: 1px solid black;
     background-color: white;
     margin-top: auto;
@@ -218,14 +262,17 @@ footer h5 {
     footer .info {
         grid-area: Info;
     }
+
     footer {
         grid-template-columns: 1fr;
         grid-template-areas:
             "Info";
     }
+
     .footer-logo {
         width: 35vw;
     }
+
     .rights {
         grid-area: 4 / 1;
     }

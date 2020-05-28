@@ -1,14 +1,14 @@
 //SHOP ITEM//
 fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item")
-.then(res=>res.json())
-.then(handleData)
+    .then(res => res.json())
+    .then(handleData)
 
-function handleData(items){
+function handleData(items) {
     console.log(items);
     items.forEach(showItems)
 }
 
-function showItems(item){
+function showItems(item) {
     console.log(item)
     const template = document.querySelector("template").content;
 
@@ -18,7 +18,8 @@ function showItems(item){
     copy.querySelector("h1").textContent = item.title.rendered;
     copy.querySelector(".price span").textContent = item.price;
 
-
+    const a = copy.querySelector('a');
+    a.href += item.id;
 
     document.querySelector("main").appendChild(copy);
 }

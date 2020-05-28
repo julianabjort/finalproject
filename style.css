@@ -267,6 +267,14 @@ footer > div {
     font-weight: 600;
 }
 
+.greenbutton {
+    border: none;
+    width: 110px;
+    color: white;
+    background-color: #9EB494;
+
+}
+
 .rights {
     font-size: 12px;
     text-align: center;

@@ -135,7 +135,7 @@ nav {
     margin: 20px 100px;
 }
 
-.banner {
+.front-banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;

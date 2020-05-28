@@ -255,9 +255,9 @@ article {
 .singleItemGrid{
     display: grid;
     grid-template-columns: 2fr 3fr;
-    margin: 5rem 5%;
+    margin: 10rem 10% 1rem;
     grid-gap: 10%;
-    padding-bottom: 30%;
+    padding-bottom: 20%;
 }
 .singleInfo{
     display: flex;
@@ -339,6 +339,10 @@ footer h5 {
     font-size: 17px;
 }
 
+footer h4{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
 footer p {
     margin: 1.5em 0;
 }

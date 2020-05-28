@@ -8,15 +8,11 @@ function getData() {
     console.log("URLSearchParams " + window.location);
     const the_item_id = urlParams.get("item_id");
     console.log(the_item_id);
-    if (the_item_id) {
-        fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item/" + the_item_id + "?_embed")
-            .then(res => res.json())
-            .then(showItems)
-    } else {
-        fetch(datalink)
-            .then(res => res.json())
-            .then(showItems)
-    }
+
+    fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item/" + the_item_id + "?_embed")
+        .then(res => res.json())
+        .then(showItems)
+
 }
 
 //function handleData(items) {
@@ -30,7 +26,7 @@ function showItems(item) {
 
     const copy = template.cloneNode(true);
 
-    //    copy.querySelector(".oneImage").src = item.image.guid;
+    copy.querySelector(".singleImage").src = item.image.guid;
     //    copy.querySelector("h1").textContent = item.title.rendered;
     //    copy.querySelector(".price span").textContent = item.price;
 

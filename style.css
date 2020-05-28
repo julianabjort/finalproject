@@ -180,6 +180,21 @@ nav {
     grid-column-gap: 20px;
 }
 
+.row4 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagetext {
+    position: absolute;
+    bottom: 200px;
+    right: 200px;
+    background-color: #9EB494;
+    padding: 1.5rem;
+
+}
+
 
 /* SHOP */
 main {
@@ -228,7 +243,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 60px 0 60px 0;
     align-items: center;
-    font-weight: 100;
     color: gray;
 }
 
@@ -265,7 +279,7 @@ footer h5 {
     font-size: 17px;
 }
 
-footer h4 {
+footer p {
     margin: 1.5em 0;
 }
 

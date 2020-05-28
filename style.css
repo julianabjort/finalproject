@@ -167,7 +167,7 @@ nav {
 
 
 /* SHOP */
-main {
+.shopMain {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin: 0 10%;
@@ -200,12 +200,62 @@ article {
     object-fit: cover;
 }
 
-#viewItem {
+.viewItem {
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
     border: 1px solid black;
     background-color: white;
     margin-top: auto;
+    text-decoration:none;
+    color: black;
+    font-size: 1rem;
+    transition: all;
 }
 
+.viewItem:hover{
+    border: 1px solid white;
+    background-color: #e2ebde;
+    color: white;
+}
+/* SINGLE ITEM */
+.singleItemGrid{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 5rem 5%;
+    grid-gap: 10%;
+    padding-bottom: 30%;
+}
+.singleInfo{
+    display: flex;
+    flex-flow: column;
+    padding-right: 25%;
+}
+.singleImage{
+    width: 90%;
+    margin: 0 auto;
+}
+#type{
+    padding: 0.7rem;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: Brandon Grotesque, sans-serif;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.addBtn{
+    background-color: #e2ebde;
+    border: none;
+    color: white;
+}
+.singleBack{
+    margin-top: auto;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
 /* FOOTER */
 footer {
     background-color: #e2ebde;

@@ -34,7 +34,7 @@ h3 {
 h4 {
     font-weight: 100;
     font-size: 15px;
-    margin: 1.5em 0;
+
 }
 
 
@@ -112,7 +112,7 @@ nav {
     display: block;
 }
 
-/* GRIDS */
+/* HOMEPAGE */
 
 .grid-container {
     display: grid;
@@ -135,7 +135,7 @@ nav {
     margin: 20px 100px;
 }
 
-.front-banner {
+.home-banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
@@ -247,6 +247,10 @@ footer h5 {
     font-weight: 500;
     margin: 1.5em 0 .5em;
     font-size: 17px;
+}
+
+footer h4 {
+    margin: 1.5em 0;
 }
 
 .fa {

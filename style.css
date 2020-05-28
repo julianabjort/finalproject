@@ -164,6 +164,21 @@ nav {
     grid-column-gap: 20px;
 }
 
+.row4 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.imagetext {
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+    background-color: #9EB494;
+    padding: 1.5rem;
+
+}
 
 /* SHOP */
 main {

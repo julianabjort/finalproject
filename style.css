@@ -17,7 +17,7 @@ button {
 /* FONTS */
 
 p {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 100;
 }
 
@@ -27,7 +27,7 @@ h1 {
 
 h3 {
 
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 400;
 }
 
@@ -58,7 +58,7 @@ nav {
 /* Links inside the navbar */
 .navbar a {
     float: right;
-    font-size: 16px;
+    font-size: 1.2rem;
     color: black;
     padding: 0 24px;
     text-align: center;
@@ -73,7 +73,7 @@ nav {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 1.2rem;
     border: none;
     outline: none;
     color: black;
@@ -144,6 +144,7 @@ nav {
 .row2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 125px;
 }
 
 .row2 img {

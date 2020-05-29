@@ -58,9 +58,15 @@ p {
     float: left;
     width: 270px;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 nav {
-    margin: 20px;
+/*    margin: 20px;*/
+    padding: 0 1.5rem;
+    background-color: white;
 }
 
 .navbar {

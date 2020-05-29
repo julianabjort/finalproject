@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
+<!--
         <nav id="nav">
 
             <div class="navbar">
@@ -31,9 +32,26 @@
                 <a href="index.html">Home</a>
             </div>
         </nav>
+-->
+<div class="topnav" id="myTopnav">
+ <img class="logo" src="Tate-Logo.png">
+  <a href="#about">About</a>
+  <a href="#news">Portfolio</a>
+  <div class="dropdown">
+    <button class="dropbtn">Shop
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Prints</a>
+      <a href="#">Custom</a>
+    </div>
+  </div>
+  <a href="#home">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     </header>
 
-
+<!--<main class="content">-->
 
     <div class="grid-container">
 
@@ -130,6 +148,7 @@
         </div>
         <p class="rights">2020 All Rights Reserved</p>
     </footer>
+<!--    </main>-->
 
     <script src="script.js"></script>
 </body></html>

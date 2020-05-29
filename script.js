@@ -1,17 +1,11 @@
-//STICKY NAV BAR//
-window.onscroll = function() {myFunction()};
-
-var nav = document.getElementById("nav");
-var sticky = nav.offsetTop;
-
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    nav.classList.add("sticky")
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    nav.classList.remove("sticky");
+    x.className = "topnav";
   }
 }
-
 //###############   Instagram short feed    #########
 const url = 'https://graph.instagram.com/me/media?fields=id,caption,media_url,permalink&access_token=IGQVJVdFFSb1F6d0JOWnI3OVhmbks0VC1uSndkblBtRi1rTUNWcUJGQjNPeXhMRDNEQk9KNmM1TlpZAcU5VX2Q1a0xTa3J1MkpGMXdWUGdKQnZAzRkExdk1VSm9vNXB6Qld4cTlZAWGIzZAWNwY1ZA2WDc4SgZDZD';
 
@@ -28,7 +22,25 @@ function handleData(feed) {
     }
 }
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("myTopnav");
+var header = document.getElementById("header");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+      header.classList.add("header");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 
 

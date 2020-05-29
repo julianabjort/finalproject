@@ -195,7 +195,6 @@ nav {
 
 }
 
-
 /* SHOP */
 .shopMain {
     display: grid;
@@ -203,7 +202,7 @@ nav {
     margin: 0 10%;
 }
 
-article {
+.shopBox {
     background-color: white;
     display: flex;
     flex-flow: column;
@@ -286,6 +285,85 @@ article {
     text-decoration: none;
     color: black;
     font-weight: 100;
+}
+
+/* PORTFOLIO */
+/* ↓ instagram long feed ↓ */
+
+.followMeOnInstagramWrapper h3 {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.instaWrapperPortofolio {
+    margin-bottom: 5rem;
+}
+
+.instaFeedPortofolio {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    gap: 0.5rem;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+}
+
+
+.linkTitlePortofolio {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.feedPortofolio {
+    max-height: 300px;
+}
+
+.postImgPortofolio {
+    float: left;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+/* INSTAGRAM */
+
+.instaWrapper {
+    margin-bottom: 5rem;
+
+}
+
+
+.instaFeed {
+    /*    margin: auto;*/
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    gap: 1rem;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+}
+
+
+.linkTitle {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.postImg {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* FOOTER */

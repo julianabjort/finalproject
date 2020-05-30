@@ -74,10 +74,12 @@ nav {
 /*    margin: 20px;*/
     padding: 0 1.5rem;
 }
-
+.topnavOverflow{
+    overflow: hidden;
+}
 .navbar {
     margin: 30px;
-    overflow: hidden;
+
     background-color: none;
 }
 
@@ -232,6 +234,7 @@ nav {
     height: 40vh;
     display: flex;
     overflow: hidden;
+    padding-top:86px;
 }
 
 .bannerImg {

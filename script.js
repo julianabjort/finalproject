@@ -16,10 +16,6 @@ function handleData(feed) {
     }
 }
 
-
-
-
-
 function showFeedFrontPage(feed) {
     const templateFrontPage = document.querySelector("#templateWrapperFrontPage").content;
     const clone = templateFrontPage.cloneNode(true);
@@ -28,3 +24,4 @@ function showFeedFrontPage(feed) {
 //    console.log(feed.media_url)
     document.querySelector(".instaFeed").appendChild(clone);
 }
+

@@ -55,6 +55,12 @@ p {
 
 
 /* NAVIGATION BAR */
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin-bottom:80px;
+}
 .logo {
     float: left;
     width: 270px;
@@ -67,7 +73,6 @@ p {
 nav {
 /*    margin: 20px;*/
     padding: 0 1.5rem;
-    background-color: white;
 }
 
 .navbar {

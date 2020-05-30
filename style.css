@@ -533,9 +533,12 @@ footer p {
     padding-top:83px;
 }
 .topnav {
-    overflow: hidden;
     background-color: white;
     padding: 1em;
+}
+
+.topnavOverflow{
+    overflow: hidden;
 }
 
 .topnav a {

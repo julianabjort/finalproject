@@ -28,6 +28,7 @@ window.onscroll = function() {myFunction()};
 // Get the navbar
 var navbar = document.getElementById("myTopnav");
 var header = document.getElementById("header");
+var overflow = document.getElementById("topnavOverflow")
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -39,6 +40,7 @@ function myFunction() {
       header.classList.add("header");
   } else {
     navbar.classList.remove("sticky");
+      overflow.classList.remove("topnavOverflow")
   }
 }
 

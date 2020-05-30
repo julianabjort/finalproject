@@ -23,3 +23,16 @@ function showItems(item) {
 
     document.querySelector("main").appendChild(copy);
 }
+
+var btn = document.getElementById("click");
+
+btn.onclick = function() {myFunctionOne()};
+function myFunctionOne() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+
+}

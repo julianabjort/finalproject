@@ -63,99 +63,6 @@ p {
     padding: 1em 0 0 1em;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left:0;
-    transition: all 10s ease-in-out 10s;
-}
-
-nav {
-    padding: 0 1.5rem;
-    background-color: white;
-}
-
-.navbar {
-    margin: 30px;
-    overflow: hidden;
-    background-color: white;
-    transition: all 10s ease-in-out 10s;
-
-}
-
-
-/* Links inside the navbar */
-/*
-.navbar a {
-    float: right;
-    font-size: 1.2rem;
-    color: black;
-    padding: 0 24px;
-    text-align: center;
-    text-decoration: none;
-}
-*/
-
-/* The dropdown container */
-/*
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-*/
-
-/* Dropdown button */
-/*
-.dropdown .dropbtn {
-    font-size: 1.2rem;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 0 24px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-*/
-
-/* Dropdown content (hidden by default) */
-/*
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-*/
-
-/* Links inside the dropdown */
-/*
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-*/
-
-/* Add background color to dropdown links on hover */
-/*
-.dropdown-content a:hover {
-    background-color: #e2ebde;
-}
-*/
-
-/* Show the dropdown menu on hover */
-/*
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-*/
-
 /* HOMEPAGE */
 
 .grid-container {
@@ -490,34 +397,6 @@ footer p {
     }
 }
 
-/* Style the navbar */
-/*
-#navbar {
-  overflow: hidden;
-  background-color: white;
-
-}
-*/
-
-/* Navbar links */
-/*
-#navbar a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-*/
-
-/* Page content */
-/*
-.content {
-  padding-top: 16px;
-    margin-top:100px;
-}
-*/
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -529,16 +408,19 @@ footer p {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
 
-.header{
-    padding-top:83px;
+header{
+   padding-bottom: 83px;
+
 }
 .topnav {
+ position: fixed;
     background-color: white;
     padding: 1em;
+    width: 97vw;
 }
 
 .topnavOverflow{
-    overflow: hidden;
+        overflow: hidden;
 }
 
 .topnav a {
@@ -548,7 +430,7 @@ footer p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+
 }
 
 .active {
@@ -567,7 +449,6 @@ footer p {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
     border: none;
     outline: none;
     color: black;
@@ -587,7 +468,7 @@ footer p {
 }
 
 .dropdown-content a {
-    float: none;
+    float: right;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -610,7 +491,7 @@ footer p {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .topnav a,
     .dropdown .dropbtn {
@@ -623,7 +504,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .topnav.responsive {
         position: relative;
     }
@@ -636,7 +517,7 @@ footer p {
 
     .topnav.responsive a {
         float: none;
-        display: block;
+        display:flex;
         text-align: left;
     }
 

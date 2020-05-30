@@ -15,7 +15,7 @@
         <header>
         <nav>
             <img class="logo" src="Tate-Logo.png">
-            <div class="navbar topnavOverflow">
+            <div class="navbar topnavOverflow" id="myTopnav">
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <div class="dropdown">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <a href="index.html">Home</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" id="click">&#9776;</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" id="click">&#9776;</a>
             </div>
         </nav>
     </header>
@@ -71,5 +71,14 @@
         <p class="rights">2020 All Rights Reserved</p>
     </footer>
 
-    <script src="shop.js"></script>
+    <script src="shop.js"></script><script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 </body></html>

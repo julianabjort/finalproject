@@ -42,3 +42,15 @@ function myFunction() {
 
   }
 
+click.onclick = function() {myFunction1()};
+
+var click = document.getElementById("click")
+
+function myFunction1() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+

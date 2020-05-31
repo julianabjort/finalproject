@@ -56,11 +56,11 @@ p {
 /* NAVIGATION BAR */
 .logo {
     float: left;
-    width: 270px;
+    width: 350px;
 }
 
 nav {
-    margin: 20px;
+    margin: 45px;
 }
 
 .navbar {

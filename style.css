@@ -138,21 +138,14 @@ nav {
 
 /* HOMEPAGE */
 
-.grid-container {
-    display: grid;
-
-}
-
-.grid-container img {
+.home-main img {
     width: 100%;
-
 }
 
 .content {
     text-align: center;
     align-items: center;
     margin: 100px;
-
 }
 
 .content p {
@@ -183,7 +176,7 @@ nav {
 
 }
 
-.custom {
+.home-custom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -204,28 +197,26 @@ nav {
 
 }
 
-/* CUSTOM */
+/* CUSTOM & ABOUT */
 
-.customMain {
+.subpageMain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    margin: 8rem;
+    grid-gap: 5rem;
+    margin: 10rem;
 }
 
-.customMain h1 {
+.subpageMain h1 {
     text-align: center;
     margin: 20px;
 }
 
-.customMain img {
-    width: 80%;
+.subpageMain img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* ABOUT */
-
 
 /* SHOP */
 .shopMain {
@@ -345,7 +336,7 @@ nav {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-    gap: 0.5rem;
+    grid-gap: 0.5rem;
     grid-auto-rows: 1fr;
     justify-content: center;
 }
@@ -383,7 +374,7 @@ nav {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
-    gap: 1rem;
+    grid-gap: 1rem;
     grid-auto-rows: 1fr;
     justify-content: center;
 }
@@ -439,7 +430,15 @@ footer > div {
     width: 110px;
     color: white;
     background-color: #9EB494;
+}
 
+.greenbutton a {
+    text-decoration: none;
+    color: white;
+}
+
+.greenbutton:hover {
+    background-color: #e2ebde;
 }
 
 .rights {

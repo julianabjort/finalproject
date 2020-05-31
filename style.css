@@ -59,13 +59,15 @@ p {
     float: left;
     width: 270px;
 }
+
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 nav {
-/*    margin: 20px;*/
+    /*    margin: 20px;*/
     padding: 0 1.5rem;
     background-color: white;
 }
@@ -202,6 +204,29 @@ nav {
 
 }
 
+/* CUSTOM */
+
+.customMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    margin: 8rem;
+}
+
+.customMain h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.customMain img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ABOUT */
+
+
 /* SHOP */
 .shopMain {
     display: grid;
@@ -245,36 +270,39 @@ nav {
     border: 1px solid black;
     background-color: white;
     margin-top: auto;
-    text-decoration:none;
+    text-decoration: none;
     color: black;
     font-size: 1rem;
     transition: all;
 }
 
-.viewItem:hover{
+.viewItem:hover {
     border: 1px solid white;
     background-color: #e2ebde;
     color: white;
 }
 
 /* SINGLE ITEM */
-.singleItemGrid{
+.singleItemGrid {
     display: grid;
     grid-template-columns: 2fr 3fr;
     margin: 10rem 10% 1rem;
     grid-gap: 10%;
     padding-bottom: 20%;
 }
-.singleInfo{
+
+.singleInfo {
     display: flex;
     flex-flow: column;
     padding-right: 25%;
 }
-.singleImage{
+
+.singleImage {
     width: 90%;
     margin: 0 auto;
 }
-#type{
+
+#type {
     padding: 0.7rem;
     font-weight: 100;
     font-size: 1rem;
@@ -282,12 +310,14 @@ nav {
     border: 1px solid gray;
     border-radius: 10px;
 }
-.addBtn{
+
+.addBtn {
     background-color: #e2ebde;
     border: none;
     color: white;
 }
-.singleBack{
+
+.singleBack {
     margin-top: auto;
     text-decoration: none;
     color: black;
@@ -424,10 +454,11 @@ footer h5 {
     font-size: 17px;
 }
 
-footer h4{
+footer h4 {
     font-size: 1rem;
     margin-top: 0.5rem;
 }
+
 footer p {
     margin: 1.5em 0;
 }

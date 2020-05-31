@@ -73,7 +73,7 @@ nav {
 }
 
 .navbar {
-    margin: 30px;
+    margin: 40px;
     overflow: hidden;
     background-color: none;
 }
@@ -186,6 +186,7 @@ nav {
     position: relative;
     text-align: center;
     color: white;
+    margin: 150px 0 150px;
 }
 
 .imagetext {
@@ -210,6 +211,11 @@ nav {
 .subpageMain h1 {
     text-align: center;
     margin: 20px;
+}
+
+.subpageMain p {
+
+    margin: 20px 0 20px;
 }
 
 .subpageMain img {

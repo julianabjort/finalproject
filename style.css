@@ -388,6 +388,16 @@ nav {
     object-fit: cover;
 }
 
+/* SHOPPING CART */
+.shoppingCart{
+    padding: 10rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+.cartImg{
+    width: 200px;
+}
+
 /* FOOTER */
 footer {
     background-color: #e2ebde;

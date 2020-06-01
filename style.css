@@ -469,7 +469,7 @@ footer p {
     width: 15px;
     margin: 0 80px;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
     /* BURGER NAVIGATION */
     .navbar a,
     .dropdown .dropbtn {
@@ -487,7 +487,6 @@ footer p {
         padding-top:40px;
         right: 0;
         background-color: white;
-
     }
     .navbar.responsive a.icon {
         position: absolute;

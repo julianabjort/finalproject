@@ -21,28 +21,34 @@ h1 {
     font-size: 2rem;
     font-weight: 400;
 }
+
 h2 {
     font-size: 2rem;
     font-weight: 100;
 }
+
 h3 {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
 h4 {
     font-size: 1.5rem;
     font-weight: 100;
 }
+
 h5 {
     font-size: 1rem;
     font-weight: 400;
 }
+
 p {
     font-size: 1rem;
     font-weight: 100;
 }
-@media only screen and (max-width: 700px){
-    p{
+
+@media only screen and (max-width: 700px) {
+    p {
         font-size: .7rem;
     }
 }
@@ -53,26 +59,32 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    padding:20px 0;
+    padding: 20px 0;
 }
+
 .cart {
     width: 1.5em;
     margin-right: 1em;
 }
+
 /*Hiding "my cart"*/
-.navbar .mycart{
+.navbar .mycart {
     display: none;
 }
+
 .logo {
     float: left;
     width: 270px;
 }
+
 nav {
     padding: 0 1.5rem;
 }
+
 .topnavOverflow {
     overflow: hidden;
 }
+
 /* Links inside the navbar */
 .navbar a {
     float: right;
@@ -82,14 +94,17 @@ nav {
     padding: 0 24px;
     text-decoration: none;
 }
+
 /* Hiding the burger icon  */
 .navbar .icon {
     display: none;
 }
+
 /* The dropdown container */
 .dropdown {
     float: right;
 }
+
 /* Dropdown button */
 .dropdown .dropbtn {
     font-size: 1rem;
@@ -100,14 +115,16 @@ nav {
     margin: 0;
     cursor: pointer;
 }
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     min-width: 100px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -117,10 +134,12 @@ nav {
     display: block;
     text-align: left;
 }
+
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
     color: #e2ebde;
 }
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -353,9 +372,11 @@ nav {
     height: 300px;
     object-fit: cover;
 }
+
 .OnHover {
     color: white;
 }
+
 .OnHoverWrapper {
     display: flex;
     flex-direction: column;
@@ -369,24 +390,29 @@ nav {
     transition: all 0.3s;
     text-align: center;
 }
+
 .OnHoverWrapper:hover {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     cursor: pointer;
 }
-p.OnHover{
+
+p.OnHover {
     font-weight: 500;
     padding-left: 2rem;
     padding-right: 2rem;
 }
-p.OnHover.user{
+
+p.OnHover.user {
     margin: 1rem auto 1rem auto;
     font-size: 1.1rem;
     font-weight: 500;
 }
+
 .instaHeart {
     width: 20px;
 }
+
 .instaComment {
     width: 18px;
 }
@@ -396,6 +422,7 @@ p.OnHover.user{
 .instaWrapper {
     margin-bottom: 5rem;
 }
+
 .instaFeed {
     /*    margin: auto;*/
     display: grid;
@@ -405,6 +432,7 @@ p.OnHover.user{
     grid-auto-rows: 1fr;
     justify-content: center;
 }
+
 .linkTitle {
     text-align: center;
     margin: 1.5rem;
@@ -420,38 +448,49 @@ p.OnHover.user{
 }
 
 /* SHOPPING CART */
-.shopping{
+.shopping {
     padding: 10rem 7rem 7rem;
 }
+
 hr.line {
     border: .1px thin;
     margin: .3em 0 1em;
 }
-.shoppingCart{
+
+.shoppingCart {
     display: grid;
     grid-template-columns: .7fr 1.3fr 1fr 1fr;
     grid-gap: 1em;
 }
-.cartImg{
+
+.cartImg {
     width: 100%;
 }
-.cartItem{
+
+.cartItem {
     display: grid;
     grid-template-columns: .7fr 1.3fr 1fr 1fr;
     grid-gap: 1em;
 }
-.shoppingCart .qty, .inputQty{
+
+.shoppingCart .qty,
+.inputQty {
     text-align: center;
 }
-.cartItem, .shoppingCart .price{
+
+.cartItem,
+.shoppingCart .price {
     text-align: right;
 }
-.itemQty{
+
+.itemQty {
     width: 1.5rem;
 }
-.cartItem .description{
+
+.cartItem .description {
     text-align: left;
 }
+
 /* FOOTER */
 footer {
     background-color: #e2ebde;
@@ -486,10 +525,12 @@ footer > div {
     font-family: Brandon Grotesque, sans-serif;
 
 }
-.subscribe{
- padding: 15px 32px;
-font-weight: 600;
+
+.subscribe {
+    padding: 15px 32px;
+    font-weight: 600;
 }
+
 .greenbutton {
     border: none;
     width: 110px;
@@ -532,60 +573,72 @@ footer p {
     color: white;
 }
 
-.fa.fa-caret-down{
-    color:black;
+.fa.fa-caret-down {
+    color: black;
 }
 
 .tiktok {
     width: 15px;
     margin: 0 80px;
 }
-@media only screen and (max-width: 1024px){
+
+@media only screen and (max-width: 1024px) {
+
     /* BURGER NAVIGATION */
     .navbar a,
     .dropdown .dropbtn {
         display: none;
 
     }
-    .navbar a.icon{
+
+    .navbar a.icon {
         padding: 0;
     }
+
     .navbar a.icon {
         display: block;
     }
+
     .navbar.responsive {
         position: absolute;
-        padding-top:40px;
+        padding-top: 40px;
         right: 0;
         background-color: white;
     }
+
     .navbar.responsive a.icon {
         position: absolute;
         right: 24px;
         top: 0;
     }
+
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: right;
         padding-bottom: 0.7rem;
     }
+
     .navbar.responsive .dropdown {
         float: none;
         padding-bottom: 0.7rem;
     }
+
     .navbar.responsive .dropdown-content {
         position: relative;
     }
+
     .navbar.responsive .dropdown .dropbtn {
         display: block;
         text-align: right;
     }
+
     .navbar.responsive .cartbtn {
         display: none;
     }
 
 }
+
 @media only screen and (max-width: 700px) {
     footer .info {
         grid-area: Info;
@@ -606,10 +659,11 @@ footer p {
     }
 
     /* SHOPPING CART */
-    .shopping{
-    padding: 5rem 3rem 3rem;
-}
-    hr.line{
-        margin: 0 0 .5rem ;
+    .shopping {
+        padding: 5rem 3rem 3rem;
+    }
+
+    hr.line {
+        margin: 0 0 .5rem;
     }
 }

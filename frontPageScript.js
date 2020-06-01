@@ -11,7 +11,7 @@ fetch(url)
 function handleData(feed) {
 //    console.log(feed)
 
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 0; i <= 4; i++) {
         showFeedFrontPage(feed.data[i])
         //        console.log(x)
     }

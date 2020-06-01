@@ -55,67 +55,58 @@ p {
 
 
 /* NAVIGATION BAR */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding:20px 0;
+}
+
 .logo {
     float: left;
     width: 270px;
 }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 nav {
-    /*    margin: 20px;*/
     padding: 0 1.5rem;
-    background-color: white;
 }
-
-.navbar {
-    margin: 40px;
+.topnavOverflow {
     overflow: hidden;
-    background-color: none;
 }
-
-
 /* Links inside the navbar */
 .navbar a {
     float: right;
-    font-size: 1.2rem;
+    display: block;
+    font-size: 1rem;
     color: black;
     padding: 0 24px;
-    text-align: center;
     text-decoration: none;
 }
-
+/* Hiding the burger icon  */
+.navbar .icon {
+    display: none;
+}
 /* The dropdown container */
 .dropdown {
     float: right;
-    overflow: hidden;
 }
-
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     outline: none;
     color: black;
     padding: 0 24px;
-    background-color: inherit;
-    font-family: inherit;
     margin: 0;
+    cursor: pointer;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(255,255,255,0.7);
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -125,12 +116,10 @@ nav {
     display: block;
     text-align: left;
 }
-
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #e2ebde;
+    color: #e2ebde;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -473,6 +462,10 @@ footer p {
     color: white;
 }
 
+.fa.fa-caret-down{
+    color:black;
+}
+
 .tiktok {
     width: 15px;
     margin: 0 80px;
@@ -496,4 +489,46 @@ footer p {
     .rights {
         grid-area: 4 / 1;
     }
+    /* BURGER NAVIGATION */
+    .navbar a,
+    .dropdown .dropbtn {
+        display: none;
+
+    }
+    .navbar a.icon{
+        padding: 0;
+    }
+    .navbar a.icon {
+        display: block;
+    }
+    .navbar.responsive {
+        position: absolute;
+        padding-top:40px;
+        right: 0;
+        background-color: white;
+
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 24px;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+        padding-bottom: 0.7rem;
+    }
+    .navbar.responsive .dropdown {
+        float: none;
+        padding-bottom: 0.7rem;
+    }
+    .navbar.responsive .dropdown-content {
+        position: relative;
+    }
+    .navbar.responsive .dropdown .dropbtn {
+        display: block;
+        text-align: right;
+    }
+
 }

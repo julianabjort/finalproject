@@ -65,6 +65,10 @@ header {
     width: 1.5em;
     margin-right: 1em;
 }
+/*Hiding "my cart"*/
+.navbar .mycart{
+    display: none;
+}
 .logo {
     float: left;
     width: 270px;
@@ -507,6 +511,10 @@ footer p {
         display: block;
         text-align: right;
     }
+    .navbar.responsive .cartbtn {
+        display: none;
+    }
+
 }
 @media only screen and (max-width: 700px) {
     footer .info {

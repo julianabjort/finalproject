@@ -323,8 +323,8 @@ nav {
 }
 
 .instaFeedPortofolio {
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 1rem;
     display: grid;
     grid-template-rows: auto;
@@ -344,6 +344,7 @@ nav {
 
 .feedPortofolio {
     max-height: 300px;
+    position: relative;
 }
 
 .postImgPortofolio {
@@ -351,7 +352,42 @@ nav {
     width: 300px;
     height: 300px;
     object-fit: cover;
-
+}
+.OnHover {
+    color: white;
+}
+.OnHoverWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.OnHoverWrapper:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    cursor: pointer;
+}
+p.OnHover{
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+p.OnHover.user{
+    margin: 1rem auto 1rem auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.instaHeart {
+    width: 20px;
+}
+.instaComment {
+    width: 18px;
 }
 
 /* INSTAGRAM */

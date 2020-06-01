@@ -158,22 +158,16 @@ nav {
     grid-column-gap: 10px;
 }
 
-.row2 {
+.homegrid {
     display: grid;
+    grid-row-gap: 100px;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 125px;
+    margin: 125px;
 }
 
-.row2 img {
+.frame img {
     width: 60%;
     height: 60%;
-    object-fit: cover;
-}
-
-.row3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
 }
 
 .home-custom {
@@ -182,7 +176,7 @@ nav {
     grid-column-gap: 20px;
 }
 
-.row4 {
+.home-image {
     position: relative;
     text-align: center;
     color: white;

@@ -61,7 +61,10 @@ header {
     background-color: white;
     padding:20px 0;
 }
-
+.cart {
+    width: 1.5em;
+    margin-right: 1em;
+}
 .logo {
     float: left;
     width: 270px;

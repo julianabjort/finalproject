@@ -465,25 +465,7 @@ footer p {
     width: 15px;
     margin: 0 80px;
 }
-
-@media only screen and (max-width: 700px) {
-    footer .info {
-        grid-area: Info;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "Info";
-    }
-
-    .footer-logo {
-        width: 35vw;
-    }
-
-    .rights {
-        grid-area: 4 / 1;
-    }
+@media only screen and (max-width: 800px){
     /* BURGER NAVIGATION */
     .navbar a,
     .dropdown .dropbtn {
@@ -524,6 +506,25 @@ footer p {
     .navbar.responsive .dropdown .dropbtn {
         display: block;
         text-align: right;
+    }
+}
+@media only screen and (max-width: 700px) {
+    footer .info {
+        grid-area: Info;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "Info";
+    }
+
+    .footer-logo {
+        width: 35vw;
+    }
+
+    .rights {
+        grid-area: 4 / 1;
     }
 
 }

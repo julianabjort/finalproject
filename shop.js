@@ -31,12 +31,8 @@ var overflow = document.getElementById("myTopnav")
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-
       overflow.classList.remove("topnavOverflow")
-
   }
-
-
 var btn = document.getElementById("click")
 btn.onclick = function() {myFunction1()};
 

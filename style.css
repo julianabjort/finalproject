@@ -392,15 +392,15 @@ hr.line {
 }
 .shoppingCart{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: .7fr 1.3fr 1fr 1fr;
     grid-gap: 1em;
 }
 .cartImg{
-    width: 150px;
+    width: 100%;
 }
 .cartItem{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: .7fr 1.3fr 1fr 1fr;
     grid-gap: 1em;
 }
 .shoppingCart .qty, .inputQty{
@@ -411,6 +411,9 @@ hr.line {
 }
 .itemQty{
     width: 1.5rem;
+}
+.cartItem .description{
+    text-align: left;
 }
 /* FOOTER */
 footer {
@@ -559,9 +562,6 @@ footer p {
     }
 
     /* SHOPPING CART */
-    .cartImg{
-    width: 50px;
-}
     .shopping{
     padding: 5rem 3rem 3rem;
 }

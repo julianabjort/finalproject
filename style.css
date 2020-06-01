@@ -59,75 +59,54 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    margin-bottom: 80px;
+    padding:20px 0;
 }
 
 .logo {
     float: left;
     width: 270px;
 }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 nav {
-    /*    margin: 20px;*/
     padding: 0 1.5rem;
 }
-
 .topnavOverflow {
     overflow: hidden;
 }
-
-.navbar {
-    margin: 30px;
-    background-color: none;
-}
-
-
 /* Links inside the navbar */
 .navbar a {
     float: right;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
     padding: 0 24px;
-    text-align: center;
     text-decoration: none;
 }
-
+/* Hiding the burger icon  */
 .navbar .icon {
     display: none;
 }
-
 /* The dropdown container */
 .dropdown {
     float: right;
-    overflow: hidden;
 }
-
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     outline: none;
     color: black;
     padding: 0 24px;
     margin: 0;
+    cursor: pointer;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(255,255,255,0.7);
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -137,12 +116,10 @@ nav {
     display: block;
     text-align: left;
 }
-
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #e2ebde;
+    color: #e2ebde;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -241,7 +218,7 @@ nav {
     height: 40vh;
     display: flex;
     overflow: hidden;
-    padding-top: 86px;
+    padding-top: 69px;
 }
 
 .bannerImg {
@@ -422,14 +399,26 @@ footer > div {
     color: gray;
     margin: .2em 0;
     font-weight: 600;
+    background-color: rgba(255,255,255,0.6);
 }
+.email{
+    border:none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: gray;
+    padding: 15px 32px;
+    width: 235px;
+    margin: 0 0 .3em;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
 
+}
 .greenbutton {
     border: none;
     width: 110px;
     color: white;
     background-color: #9EB494;
-
 }
 
 .rights {
@@ -458,6 +447,10 @@ footer p {
     color: white;
 }
 
+.fa-caret-down{
+    color: black;
+}
+
 .tiktok {
     width: 15px;
     margin: 0 80px;
@@ -482,37 +475,45 @@ footer p {
         grid-area: 4 / 1;
     }
 
+    /* BURGER NAVIGATION */
     .navbar a,
     .dropdown .dropbtn {
         display: none;
-    }
 
+    }
+    .navbar a.icon{
+        padding: 0;
+    }
     .navbar a.icon {
         display: block;
     }
     .navbar.responsive {
-        position: relative;
+        position: absolute;
+        padding-top:40px;
+        right: 0;
+        background-color: white;
+
     }
     .navbar.responsive a.icon {
         position: absolute;
-        right: 0;
+        right: 24px;
         top: 0;
     }
     .navbar.responsive a {
         float: none;
         display: block;
-        text-align: center;
+        text-align: right;
+        padding-bottom: 0.7rem;
     }
     .navbar.responsive .dropdown {
         float: none;
+        padding-bottom: 0.7rem;
     }
     .navbar.responsive .dropdown-content {
         position: relative;
     }
     .navbar.responsive .dropdown .dropbtn {
         display: block;
-        width: 100%;
-        text-align: left;
+        text-align: right;
     }
-
 }

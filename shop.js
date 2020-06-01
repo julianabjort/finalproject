@@ -42,15 +42,17 @@ function myFunction() {
 
   }
 
-click.onclick = function() {myFunction1()};
 
-var click = document.getElementById("click")
+var btn = document.getElementById("click")
+btn.onclick = function() {myFunction1()};
+
 
 function myFunction1() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "navbar") {
+  if (x.className === "navbar" || x.className === "navbar topnavOverflow") {
     x.className += " responsive";
   } else {
     x.className = "navbar";
   }
+}
 

@@ -18,40 +18,34 @@ button {
 /* FONTS */
 
 h1 {
-
     font-size: 2rem;
     font-weight: 400;
 }
-
 h2 {
-
     font-size: 2rem;
     font-weight: 100;
 }
-
 h3 {
-
     font-size: 1.5rem;
     font-weight: 400;
 }
-
 h4 {
-
     font-size: 1.5rem;
     font-weight: 100;
 }
-
 h5 {
-
     font-size: 1rem;
     font-weight: 400;
 }
-
 p {
     font-size: 1rem;
     font-weight: 100;
 }
-
+@media only screen and (max-width: 700px){
+    p{
+        font-size: .7rem;
+    }
+}
 
 
 /* NAVIGATION BAR */
@@ -389,15 +383,35 @@ nav {
 }
 
 /* SHOPPING CART */
+.shopping{
+    padding: 10rem 7rem 7rem;
+}
+hr.line {
+    border: .1px thin;
+    margin: .3em 0 1em;
+}
 .shoppingCart{
-    padding: 10rem 5rem 5rem;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
 }
 .cartImg{
-    width: 200px;
+    width: 150px;
 }
-
+.cartItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.shoppingCart .qty, .inputQty{
+    text-align: center;
+}
+.cartItem, .shoppingCart .price{
+    text-align: right;
+}
+.itemQty{
+    width: 1.5rem;
+}
 /* FOOTER */
 footer {
     background-color: #e2ebde;
@@ -544,4 +558,14 @@ footer p {
         grid-area: 4 / 1;
     }
 
+    /* SHOPPING CART */
+    .cartImg{
+    width: 50px;
+}
+    .shopping{
+    padding: 5rem 3rem 3rem;
+}
+    hr.line{
+        margin: 0 0 .5rem ;
+    }
 }

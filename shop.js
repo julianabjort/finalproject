@@ -23,3 +23,30 @@ function showItems(item) {
 
     document.querySelector("main").appendChild(copy);
 }
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+var overflow = document.getElementById("myTopnav")
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+
+      overflow.classList.remove("topnavOverflow")
+
+  }
+
+
+var btn = document.getElementById("click")
+btn.onclick = function() {myFunction1()};
+
+
+function myFunction1() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar" || x.className === "navbar topnavOverflow") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+

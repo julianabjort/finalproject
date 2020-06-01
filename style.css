@@ -1,3 +1,19 @@
+/*COPY PASTE*/
+
+input {
+    width: 50%;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#message {
+    height: 5rem;
+}
+
+
+/*COPY-PASTE END*/
+
+
 * {
     margin: 0;
     scroll-behavior: smooth;
@@ -59,22 +75,27 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    padding:20px 0;
+    padding: 20px 0;
 }
+
 .cart {
     width: 1.5em;
     margin-right: 1em;
 }
+
 .logo {
     float: left;
     width: 270px;
 }
+
 nav {
     padding: 0 1.5rem;
 }
+
 .topnavOverflow {
     overflow: hidden;
 }
+
 /* Links inside the navbar */
 .navbar a {
     float: right;
@@ -84,14 +105,17 @@ nav {
     padding: 0 24px;
     text-decoration: none;
 }
+
 /* Hiding the burger icon  */
 .navbar .icon {
     display: none;
 }
+
 /* The dropdown container */
 .dropdown {
     float: right;
 }
+
 /* Dropdown button */
 .dropdown .dropbtn {
     font-size: 1rem;
@@ -102,14 +126,16 @@ nav {
     margin: 0;
     cursor: pointer;
 }
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
     min-width: 100px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
 /* Links inside the dropdown */
 .dropdown-content a {
     float: none;
@@ -119,10 +145,12 @@ nav {
     display: block;
     text-align: left;
 }
+
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
     color: #e2ebde;
 }
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -361,6 +389,7 @@ nav {
 .instaWrapper {
     margin-bottom: 5rem;
 }
+
 .instaFeed {
     /*    margin: auto;*/
     display: grid;
@@ -370,6 +399,7 @@ nav {
     grid-auto-rows: 1fr;
     justify-content: center;
 }
+
 .linkTitle {
     text-align: center;
     margin: 1.5rem;
@@ -457,57 +487,68 @@ footer p {
     color: white;
 }
 
-.fa.fa-caret-down{
-    color:black;
+.fa.fa-caret-down {
+    color: black;
 }
 
 .tiktok {
     width: 15px;
     margin: 0 80px;
 }
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 800px) {
+
     /* BURGER NAVIGATION */
     .navbar a,
     .dropdown .dropbtn {
         display: none;
 
     }
-    .navbar a.icon{
+
+    .navbar a.icon {
         padding: 0;
     }
+
     .navbar a.icon {
         display: block;
     }
+
     .navbar.responsive {
         position: absolute;
-        padding-top:40px;
+        padding-top: 40px;
         right: 0;
         background-color: white;
 
     }
+
     .navbar.responsive a.icon {
         position: absolute;
         right: 24px;
         top: 0;
     }
+
     .navbar.responsive a {
         float: none;
         display: block;
         text-align: right;
         padding-bottom: 0.7rem;
     }
+
     .navbar.responsive .dropdown {
         float: none;
         padding-bottom: 0.7rem;
     }
+
     .navbar.responsive .dropdown-content {
         position: relative;
     }
+
     .navbar.responsive .dropdown .dropbtn {
         display: block;
         text-align: right;
     }
 }
+
 @media only screen and (max-width: 700px) {
     footer .info {
         grid-area: Info;
@@ -527,4 +568,8 @@ footer p {
         grid-area: 4 / 1;
     }
 
-}
+
+    .homegrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }

@@ -726,3 +726,19 @@ footer p {
         margin: 0 0 .5rem;
     }
 }
+
+
+
+
+
+/*  search bar  */
+
+
+.searchWrapper {
+    margin: 2rem auto 0.5rem auto;
+    text-align: center;
+}
+
+.reset_all {
+
+}

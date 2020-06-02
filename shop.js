@@ -46,3 +46,35 @@ function myFunction1() {
   }
 }
 
+
+
+
+// ###################   Search bar
+
+
+const wpLink = 'http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item';
+
+function searchByKeyword(value) {
+    console.log(value);
+
+    fetch(wpLink + `?search=${value}`)
+        .then(f => f.json())
+        .then((searchedData) => {
+
+            searchedData.forEach((item) => {
+                const template = document.querySelector("template").content;
+                const copy = template.cloneNode(true);
+
+                copy.querySelector(".oneImage").src = item.image.guid;
+                copy.querySelector("h1").textContent = item.title.rendered;
+                copy.querySelector(".price span").textContent = item.price;
+
+                document.querySelector(".searchResultWrapper").appendChild(copy);
+            })
+        });
+
+    //remove search from previous entries
+    document.querySelector(".searchResultWrapper").innerHTML = '';
+     document.querySelector("main").innerHTML = '';
+
+}

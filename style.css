@@ -59,10 +59,12 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    padding: 30px 0;
+    padding: 20px 0;
     z-index: 1;
 }
-
+.navbar{
+    padding-top: 1rem;
+}
 .cart {
     width: 1.5em;
     margin-right: 1em;
@@ -75,11 +77,12 @@ header {
 
 .logo {
     float: left;
-    width: 270px;
+    width: 250px;
 }
 
 nav {
     padding: 0 1.5rem;
+
 }
 
 .topnavOverflow {
@@ -551,7 +554,7 @@ p.captionOnHoverFrontPage {
 
 /* SHOPPING CART */
 .shopping {
-    padding: 10rem 7rem 7rem;
+    padding: 10rem 15rem 7rem;
 }
 
 hr.line {
@@ -782,10 +785,14 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     text-align: left;
-    grid-gap: 5rem;
+    grid-gap: 1rem;
     margin: 0 15% 15%;
     padding-top: 10rem;
 }
+    /* SHOPPING CART */
+    .shopping{
+        padding: 10rem 5rem;
+    }
 }
 
 @media only screen and (max-width: 700px) {

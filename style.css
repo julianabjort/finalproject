@@ -229,6 +229,15 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+input {
+    width: 50%;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#message {
+    height: 5rem;
+}
 
 /* SHOP */
 .shopMain {
@@ -720,6 +729,46 @@ footer p {
 }
 
 @media only screen and (max-width: 700px) {
+    /* HOME PAGE */
+     .homegrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "pic"
+            "text"
+            "pic2"
+            "text2"
+    }
+
+    .frame {
+        grid-area: pic;
+    }
+
+    .home-text {
+        grid-area: text;
+    }
+
+    .home-text2 {
+        grid-area: text2
+    }
+
+    .home-custom {
+        grid-area: pic2;
+    }
+
+    .content p {
+        margin: 20px 0px;
+    }
+
+    .home-banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        padding-top: 4.3rem;
+    }
+
+    #hide {
+        display: none;
+    }
     /* SINGLE ITEM */
     .singleItemGrid {
     display: grid;

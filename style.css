@@ -60,6 +60,7 @@ header {
     width: 100%;
     background-color: white;
     padding: 30px 0;
+    z-index: 1;
 }
 
 .cart {
@@ -95,6 +96,10 @@ nav {
     text-decoration: none;
 }
 
+.dropdown .dropbtn:hover, .navbar a:hover{
+    color: #9EB494;
+}
+
 /* Hiding the burger icon  */
 .navbar .icon {
     display: none;
@@ -120,7 +125,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     min-width: 100px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -137,7 +142,7 @@ nav {
 
 /* Add background color to dropdown links on hover */
 .dropdown-content a:hover {
-    color: #e2ebde;
+    color: #9EB494;
 }
 
 /* Show the dropdown menu on hover */
@@ -264,7 +269,7 @@ input {
     height: 40vh;
     display: flex;
     overflow: hidden;
-    padding-top: 4.3rem;
+    padding-top: 5.4rem;
 }
 
 .bannerImg {
@@ -302,8 +307,21 @@ input {
     text-align: center;
 }
 
-.reset_all {
-    text-align: center;
+.search{
+    border: none;
+    padding: 1rem 0 1rem 1rem;
+    width: 300px;
+    color: gray;
+    font-weight: 100;
+    background-color: #f2f2f2;
+    font-family: Brandon Grotesque, sans-serif;
+    font-size: 1rem;
+}
+
+.searchWrapper .reset_all {
+    font-size: 1rem;
+    width: 3.6rem;
+    padding: .99rem;
 }
 
 /* SINGLE ITEM */
@@ -672,11 +690,11 @@ footer p {
     .navbar a,
     .dropdown .dropbtn {
         display: none;
-
     }
 
     .navbar a.icon {
-        padding: 0;
+        padding: 0 20px 0 0;
+
     }
 
     .navbar a.icon {
@@ -685,8 +703,10 @@ footer p {
 
     .navbar.responsive {
         position: absolute;
-        padding-top: 40px;
+        padding: 40px 20px 0 20px;
         right: 0;
+
+        text-align: center;
         background-color: white;
     }
 
@@ -763,7 +783,7 @@ footer p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
-        padding-top: 4.3rem;
+        padding-top: 5.4rem;
     }
 
     #hide {
@@ -798,7 +818,7 @@ footer p {
 
     /* SHOPPING CART */
     .shopping {
-        padding: 5rem 3rem 3rem;
+        padding: 5.4rem 3rem 3rem;
     }
 
     hr.line {

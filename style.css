@@ -551,7 +551,7 @@ hr.line {
 }
 
 .cartItem,
-.shoppingCart .price {
+.shoppingCart .dollar {
     text-align: right;
 }
 
@@ -571,6 +571,7 @@ footer {
     padding: 60px 0 60px 0;
     align-items: center;
     color: gray;
+
 }
 
 footer > div {

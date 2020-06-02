@@ -1,5 +1,20 @@
 /*COPY PASTE*/
 
+.aboutpics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin: 10rem;
+}
+
+.shrink {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*COPY-PASTE END*/
+
 input {
     width: 50%;
     padding: 0.2rem;
@@ -11,7 +26,7 @@ input {
 }
 
 
-/*COPY-PASTE END*/
+
 
 
 * {
@@ -215,7 +230,9 @@ nav {
 
 /* CUSTOM & ABOUT */
 
-.subpageMain {
+
+
+.subpage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
@@ -224,20 +241,20 @@ nav {
     padding-top: 10rem;
 }
 
-.subpageMain h1 {
+.subpage h1 {
     text-align: center;
     margin: 20px;
 }
 
-.subpageMain p {
+.subpage p {
 
     margin: 20px 0 20px;
 }
 
-.subpageMain img {
+.fit-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* SHOP */
@@ -363,7 +380,6 @@ nav {
     grid-auto-rows: 1fr;
     justify-content: center;
 }
-
 
 .linkTitlePortofolio {
     text-align: center;
@@ -606,6 +622,6 @@ footer p {
         padding-top: 4.3rem;
     }
 
-    #hide {
+    .hide {
         display: none;
     }

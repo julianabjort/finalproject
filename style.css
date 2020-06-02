@@ -417,35 +417,94 @@ p.OnHover.user {
     width: 18px;
 }
 
-/* INSTAGRAM */
+
+/* INSTAGRAM Home Page short feed */
 
 .instaWrapper {
     margin-bottom: 5rem;
+
 }
 
-.instaFeed {
-    /*    margin: auto;*/
+
+.instaFeedFrontPage {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
-    grid-gap: 1rem;
+    gap: 1rem;
     grid-auto-rows: 1fr;
     justify-content: center;
 }
 
-.linkTitle {
+
+.linkTitleFrontPage {
     text-align: center;
     margin: 1.5rem;
     font-size: 1.5rem;
     color: black;
 }
 
-.postImg {
+.postImgFrontPage {
     float: left;
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
+
+.feedFrontPage {
+    max-height: 200px;
+    position: relative;
+}
+
+.OnHoverFrontPage {
+    color: white;
+}
+
+.OnHoverWrapperFrontPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.OnHoverWrapperFrontPage:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    cursor: pointer;
+}
+
+p.OnHoverFrontPage{
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+}
+
+p.OnHoverFrontPage.userFrontPage{
+    margin: 0.5rem auto 0.5rem auto;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+p.captionOnHoverFrontPage {
+    max-height: 150px;
+
+}
+
+.instaHeartFrontPage {
+    width: 16px;
+}
+
+.instaCommentFrontPage {
+    width: 14px;
+}
+
 
 /* SHOPPING CART */
 .shopping {

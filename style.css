@@ -285,6 +285,17 @@ nav {
     color: white;
 }
 
+
+/*  search bar  */
+.searchWrapper {
+    margin: 2rem auto 0.5rem auto;
+    text-align: center;
+}
+
+.reset_all {
+    text-align: center;
+}
+
 /* SINGLE ITEM */
 .singleItemGrid {
     display: grid;
@@ -326,6 +337,7 @@ nav {
     color: black;
     font-weight: 100;
 }
+
 
 /* PORTFOLIO */
 /* ↓ instagram long feed ↓ */
@@ -504,6 +516,7 @@ p.captionOnHoverFrontPage {
 .instaCommentFrontPage {
     width: 14px;
 }
+
 
 
 /* SHOPPING CART */
@@ -729,16 +742,3 @@ footer p {
 
 
 
-
-
-/*  search bar  */
-
-
-.searchWrapper {
-    margin: 2rem auto 0.5rem auto;
-    text-align: center;
-}
-
-.reset_all {
-
-}

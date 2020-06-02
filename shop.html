@@ -37,6 +37,18 @@
     <div class="banner">
         <img class="bannerImg" src="banner.png">
     </div>
+
+    <!--    Search bar    -->
+
+    <div class="searchWrapper">
+       <p class="searchText">Search item by keyword:</p>
+        <input oninput="searchByKeyword(this.value)" type="search" class="search searchByKeyword" placeholder="Keyword" onfocus="this.placeholder=''" onblur="this.placeholder='Keyword'">
+    </div>
+    <button class="reset_all greenbutton" onClick="window.location.reload();">Reset filters</button>
+    <section class="searchResultWrapper shopMain"></section>
+
+    <!--    ########   -->
+
     <main class="shopMain"></main>
     <template id="oneItem">
         <article class="shopBox">

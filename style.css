@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/nfv6tjp.css");
 
+@import url("https://use.typekit.net/gnf7zyw.css");
+
+
+
 * {
     margin: 0;
     scroll-behavior: smooth;
@@ -60,6 +64,7 @@ button {
 h1 {
     font-size: 2rem;
     font-weight: 400;
+    font-family: millerbanner, serif;
 }
 
 h2 {
@@ -218,6 +223,12 @@ nav {
     grid-column-gap: 10px;
     padding-top: 5.4rem;
     padding-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.home-banner p {
+    margin: 20px 24% 20px 24%;
 }
 
 .homegrid {

@@ -310,6 +310,7 @@ input {
     margin: 0 10%;
 }
 
+/*
 .shopBox {
     background-color: white;
     display: flex;
@@ -318,6 +319,7 @@ input {
     text-align: center;
     align-items: center;
 }
+*/
 
 .oneImage {
     width: 200px;
@@ -1075,9 +1077,17 @@ footer p {
 }
 
 .shop-items {
+/*
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+*/
+     background-color: white;
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
 }
 
 .shop-item-image {
@@ -1136,6 +1146,7 @@ footer p {
     border: none;
     border-radius: .3em;
     font-weight: bold;
+/*    max-width: 100px;*/
 }
 
 .btn-danger:hover {

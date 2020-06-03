@@ -1049,6 +1049,7 @@ footer p {
 
 .shop-item {
     margin: 30px;
+    align-content: center;
 }
 
 .shop-item-title {

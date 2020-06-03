@@ -775,6 +775,11 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
     }
 
+
+    .OnHoverWrapperFrontPage:hover {
+        display: none;
+    }
+
     .imagetext {
         bottom: 10%;
         right: 10%;
@@ -891,6 +896,11 @@ footer p {
         height: 80px;
         object-fit: cover;
     }
+
+    .OnHoverWrapperFrontPage:hover {
+        display: none;
+    }
+
 
     /* SINGLE ITEM */
     .singleItemGrid {

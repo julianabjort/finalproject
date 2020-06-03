@@ -231,38 +231,32 @@ nav {
     margin: 20px 24% 20px 24%;
 }
 
-.homegrid {
+.customgrid {
     display: grid;
-    grid-row-gap: 100px;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 15% 10%;
+    grid-template-columns: 1fr 2fr;
 }
 
-.frame img {
-    width: 60%;
-    height: 60%;
-}
 
-.home-custom {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-}
 
 .home-image {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
     margin: 15% 0 15%;
+    opacity: 90%;
 }
 
 .imagetext {
     position: absolute;
     bottom: 25%;
     right: 25%;
-    background-color: #9EB494;
     padding: 1.5rem;
-    text-align:
+
+}
+
+.imagetext p {
+
+    font-family: millerbanner, serif;
 }
 
 /* CUSTOM & ABOUT */

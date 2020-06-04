@@ -14,49 +14,45 @@ body {
 }
 
 /*BUTTONS*/
-
-button {
-    padding: 10px;
-    font-size: 10px;
-    width: 100px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.whitebutton {
+.whitebutton, .greenbutton{
     padding: 6px 15px 6px 15px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 400;
+    width: 100px;
     text-transform: uppercase;
-    border: 1px solid black;
+    font-family: Brandon Grotesque, sans-serif;
+    cursor: pointer;
     text-decoration: none;
-    color: black;
-    transition: all;
 }
+.whitebutton {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.whitebutton a{
 
+    color: black;
+}
 .whitebutton:hover {
     border: 1px solid white;
-    background-color: #e2ebde;
+    background-color: #9EB494;
     color: white;
 }
 
 .greenbutton {
-    padding: 7px 15px 7px 15px;
-    border: none;
-    font-size: 0.6rem;
-    font-weight: 400;
+    border: 1px solid white;
     color: white;
     background-color: #9EB494;
-    font-family: Brandon Grotesque, sans-serif;
 }
 
 .greenbutton a {
     text-decoration: none;
     color: white;
 }
-
 .greenbutton:hover {
-    background-color: #e2ebde;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 /* FONTS */
@@ -68,23 +64,34 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 100;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: millerbanner, serif;
 }
 
 h3 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 100;
+    cursor: pointer;
 }
 
 h5 {
     font-size: 1rem;
     font-weight: 400;
+    font-family: millerbanner, serif;
+}
+
+h6{
+    font-family: millerbanner, serif;
+    font-style: italic;
+    padding: 1rem;
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 p {
@@ -176,7 +183,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: white;
     min-width: 100px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -234,6 +241,7 @@ nav {
 .customgrid {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-gap: 5em;
 }
 
 .home-image {
@@ -245,14 +253,8 @@ nav {
 }
 
 .home-quote {
-    margin: 8rem 25rem 8rem 25rem;
+    margin: 8rem 25%;
     text-align: center;
-}
-
-.home-quote p {
-    font-family: millerbanner, serif;
-    font-style: italic;
-    padding: 1rem;
 }
 
 /* CUSTOM & ABOUT */
@@ -307,7 +309,15 @@ input {
     text-align: center;
     grid-gap: 5rem;
     margin: 0 15% 15%;
+}
 
+video{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact{
+    margin-top: .5rem;
 }
 
 /* SHOP */
@@ -343,6 +353,10 @@ input {
     min-height: 100%;
     max-width: 100%;
     object-fit: cover;
+}
+
+a.whitebutton{
+    margin-top: 1rem;
 }
 
 
@@ -399,12 +413,6 @@ input {
     border-radius: 10px;
 }
 
-.addBtn {
-    background-color: #e2ebde;
-    border: none;
-    color: white;
-}
-
 .singleBack {
     margin-top: auto;
     text-decoration: none;
@@ -416,11 +424,9 @@ input {
 /* PORTFOLIO */
 /* ↓ instagram long feed ↓ */
 
-.followMeOnInstagramWrapper h3 {
+.followMeOnInstagramWrapper h1 {
     padding-top: 10rem;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
 }
 
 .instaWrapperPortofolio {
@@ -428,8 +434,8 @@ input {
 }
 
 .instaFeedPortofolio {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 14%;
+    margin-right: 14%;
     margin-top: 1rem;
     display: grid;
     grid-template-rows: auto;
@@ -641,7 +647,7 @@ hr.line {
 
 /* FOOTER */
 footer {
-    background-color: #e2ebde;
+    background-color: rgba(149, 165, 132, 0.4);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 60px 0 60px 0;
@@ -689,10 +695,10 @@ footer h5 {
     font-weight: 500;
     margin: 1.5em 0 .5em;
     font-size: 17px;
+    text-transform: none;
 }
 
 footer h4 {
-    font-size: 1rem;
     margin-top: 0.5rem;
 }
 
@@ -776,9 +782,16 @@ footer p {
         margin: ;
     }
 
-    .home-custom {
+    .home-banner {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        padding-top: 5.4rem;
     }
+    .customgrid {
+    grid-template-columns: 1fr;
+    grid-gap: 9em;
+}
 
     .instaFeedFrontPage {
         grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
@@ -802,6 +815,10 @@ footer p {
         object-fit: cover;
     }
 
+        .home-banner #hide {
+        display: none;
+    }
+
     /* SINGLE ITEM */
 
     .singleItemGrid {
@@ -822,72 +839,30 @@ footer p {
     .shopping {
         padding: 10rem 5rem;
     }
+
+    /* FOOTER */
+    .footer-logo{
+        width: 35vw;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-
+    h1{
+        font-size: 1.5rem;
+    }
+    h2, h3{
+        font-size: 1rem;
+    }
+    h4, h5, h6, p{
+        font-size: .8rem;
+    }
+    .whitebutton, .greenbutton{
+        font-size: .5rem;
+    }
     /* HOME PAGE */
-    .homegrid {
-        display: grid;
-        grid-gap: 50px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "pic"
-            "text"
-            "pic2"
-            "text2";
-    }
-
-
-    .frame {
-        grid-area: pic;
-    }
-
-    .home-text {
-        grid-area: text;
-    }
-
-    .home-text2 {
-        grid-area: text2
-    }
-
-    .home-custom {
-        grid-area: pic2;
-    }
 
     .content p {
         margin: 20px 0;
-    }
-
-    .home-banner {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        padding-top: 5.4rem;
-    }
-
-    .home-banner #hide {
-        display: none;
-    }
-
-    .home-custom #hide {
-        display: block;
-    }
-
-    .home-custom {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .imagetext h3 {
-        font-size: 1rem;
-    }
-
-    .imagetext p {
-        font-size: .7rem;
-    }
-
-    .imagetext {
-        padding: 1rem;
-        ;
     }
 
     .instaFeedFrontPage {
@@ -919,6 +894,7 @@ footer p {
     /* FOOTER */
     footer .info {
         grid-area: Info;
+        margin-bottom: 1rem;
     }
 
     footer {
@@ -928,7 +904,7 @@ footer p {
     }
 
     .footer-logo {
-        width: 35vw;
+        width: 45vw;
     }
 
     .rights {

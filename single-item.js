@@ -22,7 +22,7 @@ function showItems(item) {
 
     copy.querySelector(".singleImage").src = item.image.guid;
     copy.querySelector("h1").textContent = item.title.rendered;
-    copy.querySelector("h4 span").textContent = item.price;
+    copy.querySelector("h3 span").textContent = item.price;
 
     //Putting the copy of the template into main
     document.querySelector("main").appendChild(copy);

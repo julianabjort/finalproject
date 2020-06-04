@@ -42,7 +42,7 @@
 
     <div class="searchWrapper">
         <p class="searchText">Search item by keyword:</p>
-        <input oninput="searchByKeyword(this.value)" type="search" class="search searchByKeyword" placeholder="Keyword" onfocus="this.placeholder=''" onblur="this.placeholder='Keyword'"> <button class="reset_all greenbutton" onClick="window.location.reload();">&#10226;</button>
+        <input oninput="searchByKeyword(this.value)" type="search" class="search searchByKeyword" placeholder="Keyword" onfocus="this.placeholder=''" onblur="this.placeholder='&#9740;Keyword'"><button class="reset_all greenbutton" onClick="window.location.reload();">&#10227;</button>
     </div>
 
     <section class="searchResultWrapper shopMain"></section>
@@ -53,8 +53,8 @@
     <template id="oneItem">
         <article class="shopBox">
             <img class="oneImage">
-            <h1></h1>
-            <div class="price">$ <span></span></div>
+            <h2></h2>
+            <h4 class="price">$ <span></span></h4>
             <a href="single-item.html?item_id=" class="whitebutton">View</a>
         </article>
     </template>

@@ -87,8 +87,8 @@ function searchByKeyword(value) {
 
 
 
-
-
+//     Add to cart functionality
+// Inspiration from  https://github.com/WebDevSimplified/Introduction-to-Web-Development
 
 
 function ready() {

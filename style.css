@@ -1046,17 +1046,12 @@ footer p {
     text-align: center;
 }
 
-.btn-primary {
-    color: white;
-    background-color: #9EB494;
+.btn-purchase {
     border: none;
-    font-weight: bold;
-    margin-top: 1rem;
+    width: 200px;
 }
 
-.btn-primary:hover {
-    background-color: #e2ebde;
-}
+
 
 .shop-item {
     margin: 30px;

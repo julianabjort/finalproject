@@ -980,9 +980,8 @@ footer p {
 }
 
 .section-header {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 2.5rem;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -1078,10 +1077,7 @@ footer p {
 }
 
 .btn-danger {
-    color: white;
-    background-color: #9EB494;
-    border: none;
-    font-weight: bold;
+    background-color: rgba(255,255,255,0);
 }
 
 .btn-danger:hover {

@@ -99,9 +99,8 @@ h4 {
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 19px;
     font-weight: 400;
-    font-family: millerbanner, serif;
 }
 
 h6 {
@@ -719,10 +718,7 @@ footer > div {
 }
 
 footer h5 {
-    font-weight: 500;
     margin: 1.5em 0 .5em;
-    font-size: 17px;
-    text-transform: none;
 }
 
 footer h4 {

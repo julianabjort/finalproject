@@ -684,12 +684,14 @@ footer > div {
     text-align: center;
     background-color: #f2f2f2;
     font-family: Brandon Grotesque, sans-serif;
+    cursor:text;
 
 }
 
 .subscribe {
     padding: 15px 32px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .rights {

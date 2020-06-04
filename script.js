@@ -77,6 +77,5 @@ function myFunction2() {
   }
   else{
       element.classList.remove("active");
-
   }
 }

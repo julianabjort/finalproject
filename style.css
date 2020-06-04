@@ -822,11 +822,16 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
         padding-top: 5.4rem;
+          padding-bottom: 0;
     }
 
     .customgrid {
         grid-template-columns: 1fr;
-        grid-gap: 9em;
+        grid-gap: 5rem;
+        margin:5rem 10%;
+    }
+    .frame{
+        grid-row-start: 1;
     }
 
     .instaFeedFrontPage {
@@ -851,7 +856,7 @@ footer p {
         object-fit: cover;
     }
 
-    .home-banner #hide {
+   #hide {
         display: none;
     }
 
@@ -896,14 +901,16 @@ footer p {
     h5,
     h6,
     p {
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     .whitebutton,
     .greenbutton {
         font-size: .5rem;
     }
-
+    .logo{
+        width: 150px;
+    }
     /* HOME PAGE */
 
     .content p {

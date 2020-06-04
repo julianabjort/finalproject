@@ -2,7 +2,26 @@
 
 @import url("https://use.typekit.net/gnf7zyw.css");
 
+.slide {
+    padding: 7rem 0 0 1rem;
+    width: 30%;
+    background-color: pink;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition: slide 1s;
+    display: none;
+}
 
+.active {
+    display: block;
+    opacity: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-flow: column;
+}
 
 * {
     margin: 0;
@@ -14,7 +33,8 @@ body {
 }
 
 /*BUTTONS*/
-.whitebutton, .greenbutton{
+.whitebutton,
+.greenbutton {
     padding: 6px 15px 6px 15px;
     font-size: 0.6rem;
     font-weight: 400;
@@ -24,15 +44,18 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+
 .whitebutton {
     border: 1px solid black;
     color: black;
     background-color: white;
 }
-.whitebutton a{
+
+.whitebutton a {
 
     color: black;
 }
+
 .whitebutton:hover {
     border: 1px solid white;
     background-color: #9EB494;
@@ -49,6 +72,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
 .greenbutton:hover {
     background-color: white;
     color: black;
@@ -86,7 +110,7 @@ h5 {
     font-family: millerbanner, serif;
 }
 
-h6{
+h6 {
     font-family: millerbanner, serif;
     font-style: italic;
     padding: 1rem;
@@ -311,12 +335,12 @@ input {
     margin: 0 15% 15%;
 }
 
-video{
+video {
     width: 100%;
     margin: 0 auto;
 }
 
-.contact{
+.contact {
     margin-top: .5rem;
 }
 
@@ -355,7 +379,7 @@ video{
     object-fit: cover;
 }
 
-a.whitebutton{
+a.whitebutton {
     margin-top: 1rem;
 }
 
@@ -623,7 +647,7 @@ hr.line {
 
 .cartItem {
     display: grid;
-    grid-template-columns: .7fr 1.3fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-gap: 1em;
 }
 
@@ -634,7 +658,7 @@ hr.line {
 
 .cartItem,
 .shoppingCart .dollar {
-    text-align: right;
+
 }
 
 .itemQty {
@@ -788,10 +812,11 @@ footer p {
         grid-column-gap: 10px;
         padding-top: 5.4rem;
     }
+
     .customgrid {
-    grid-template-columns: 1fr;
-    grid-gap: 9em;
-}
+        grid-template-columns: 1fr;
+        grid-gap: 9em;
+    }
 
     .instaFeedFrontPage {
         grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
@@ -815,7 +840,7 @@ footer p {
         object-fit: cover;
     }
 
-        .home-banner #hide {
+    .home-banner #hide {
         display: none;
     }
 
@@ -841,24 +866,33 @@ footer p {
     }
 
     /* FOOTER */
-    .footer-logo{
+    .footer-logo {
         width: 35vw;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    h1{
+    h1 {
         font-size: 1.5rem;
     }
-    h2, h3{
+
+    h2,
+    h3 {
         font-size: 1rem;
     }
-    h4, h5, h6, p{
+
+    h4,
+    h5,
+    h6,
+    p {
         font-size: .8rem;
     }
-    .whitebutton, .greenbutton{
+
+    .whitebutton,
+    .greenbutton {
         font-size: .5rem;
     }
+
     /* HOME PAGE */
 
     .content p {

@@ -11,12 +11,12 @@
     <title>Tate McKenzie</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <nav>
             <a href="index.html"><img class="logo" src="Images/TM_logo1.png"></a>
             <div class="navbar topnavOverflow" id="myTopnav">
-                <a class="cartbtn" href="cart.html"><img class="cart" src="Images/cart.svg"></a>
+                <a class="cartbtn" id="cartbtn" href="#"><img class="cart" src="Images/cart.svg"></a>
                 <a class="mycart" href="cart.html">My cart</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -34,6 +34,17 @@
             </div>
         </nav>
     </header>
+    <div class="slide" id="slide">
+        <h2>Cart</h2>
+        <hr class="line">
+        <article class="cartItem">
+            <img class="cartImg" src="Images/cart.svg">
+            <div class="flex"><p class="description">This is an Item</p>
+                   <p>$3.00</p>
+                    <div><input type="text" class="itemQty"></div>
+        </div>
+        </article>
+    </div>
     <section class="shopping">
     <article class="shoppingCart">
         <p>Item</p><br>
@@ -78,5 +89,5 @@
         <p class="rights">2020 All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body></html>

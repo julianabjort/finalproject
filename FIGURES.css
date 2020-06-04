@@ -1,0 +1,56 @@
+/*FIGURE x.0*/
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*FIGURE x.1*/
+
+/* Hiding the burger icon  */
+.navbar .icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar a.icon {
+        display: block;
+    }
+
+    /*Hiding "my cart"*/
+    .navbar .mycart {
+        display: none;
+    }
+
+    .navbar.responsive {
+        position: absolute;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 24px;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        display: block;
+    }
+
+    .navbar.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .navbar.responsive .dropdown .dropbtn {
+        display: block;
+    }
+
+    .navbar.responsive .cartbtn {
+        display: none;
+    }
+}

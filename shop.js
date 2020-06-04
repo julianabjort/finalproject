@@ -174,7 +174,7 @@ function addItemToCart(title, price, imageSrc) {
         <div class="cart-price cart-column">${price}</div>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
+            <button class="whitebutton btn-danger" type="button">REMOVE</button>
         </div>`;
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);

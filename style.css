@@ -33,6 +33,13 @@ body {
 }
 
 /*BUTTONS*/
+button {
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 .whitebutton,
 .greenbutton {
     padding: 6px 15px 6px 15px;
@@ -963,11 +970,6 @@ footer p {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
-}
-.section-header {
-    font-weight: normal;
-    text-align: center;
-    font-size: 2.5em;
 }
 
 

@@ -364,10 +364,9 @@ video {
 }
 
 .banner {
-    height: 40vh;
-    display: flex;
-    overflow: hidden;
-    padding-top: 5.4rem;
+    text-align: center;
+    padding-top: 12rem;
+    margin: 0 20%;
 }
 
 .bannerImg {
@@ -385,13 +384,16 @@ a.whitebutton {
 /*  search bar  */
 .searchWrapper {
     margin: 2rem auto 0.5rem auto;
-    text-align: center;
+    text-align: right;
+     margin-right: 10%;
 }
-
+.searchText{
+    margin-bottom: .5rem;
+}
 .search {
     border: none;
-    padding: 1rem 0 1rem 1rem;
-    width: 300px;
+    padding: .3rem 0 .3rem .3rem;
+    width: 114px;
     color: #707070;
     font-weight: 100;
     background-color: #f2f2f2;
@@ -400,9 +402,9 @@ a.whitebutton {
 }
 
 .searchWrapper .reset_all {
-    font-size: 1rem;
-    width: 3.6rem;
-    padding: .99rem;
+    font-size: .8rem;
+    width: 2.2rem;
+    padding: .4rem;
 }
 
 /* SINGLE ITEM */
@@ -1035,7 +1037,7 @@ footer p {
 }
 
 .shop-item {
-    margin: 30px;
+    margin: 0 30px;
     align-content: center;
 }
 

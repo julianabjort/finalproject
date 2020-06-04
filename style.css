@@ -818,15 +818,16 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
         padding-top: 5.4rem;
-          padding-bottom: 0;
+        padding-bottom: 0;
     }
 
     .customgrid {
         grid-template-columns: 1fr;
         grid-gap: 5rem;
-        margin:5rem 10%;
+        margin: 5rem 10%;
     }
-    .frame{
+
+    .frame {
         grid-row-start: 1;
     }
 
@@ -852,7 +853,7 @@ footer p {
         object-fit: cover;
     }
 
-   #hide {
+    #hide {
         display: none;
     }
 
@@ -904,9 +905,11 @@ footer p {
     .greenbutton {
         font-size: .5rem;
     }
-    .logo{
+
+    .logo {
         width: 150px;
     }
+
     /* HOME PAGE */
 
     .content p {
@@ -992,9 +995,7 @@ footer p {
 
 .section-header {
     margin: 3.5rem 0 1.5rem;
-
 }
-
 
 .btn-primary {
     color: white;
@@ -1002,10 +1003,16 @@ footer p {
     border: none;
     font-weight: bold;
     margin-top: 1rem;
+    border: 1px solid white;
+    padding: 15px 0;
+    width: 300px;
+    font-family: Brandon Grotesque, sans-serif;
 }
 
 .btn-primary:hover {
-    background-color: #e2ebde;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 .shop-item {

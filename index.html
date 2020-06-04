@@ -19,7 +19,7 @@
         <nav>
             <a href="index.html"><img class="logo" src="Images/TM_logo1.png"></a>
             <div class="navbar topnavOverflow" id="myTopnav">
-                <a class="cartbtn" href="cart.html"><img class="cart" src="Images/cart.svg"></a>
+                <a class="cartbtn" id="cartbtn" href="#"><img class="cart" src="Images/cart.svg"></a>
                 <a class="mycart" href="cart.html">My cart</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -38,7 +38,20 @@
         </nav>
     </header>
 
-
+    <div class="slide" id="slide">
+        <section class="container content-section">
+            <h3 class="section-header">Cart</h3>
+            <hr class="line">
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <h3 class="cart-total-title">Total</h3>
+                <span class="cart-total-price">$0<span></span></span>
+            </div>
+            <button class="btn-primary btn-purchase" type="button">
+                PURCHASE
+            </button>
+        </section>
+    </div>
 
     <div class="home-main">
 

@@ -771,7 +771,7 @@ footer p {
     .navbar.responsive a.icon {
         position: absolute;
         right: 24px;
-        top: 0;
+        top:1rem;
     }
 
     .navbar.responsive a {
@@ -985,7 +985,7 @@ footer p {
 
 .slide {
     padding: 4rem 0 0 1rem;
-    width: 30%;
+    width: 24rem;
     background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
     position: fixed;
@@ -1021,6 +1021,13 @@ footer p {
     border: 1px solid black;
 }
 
+.shop-item-button{
+    width: 100px;
+    padding: 6px 15px;
+    border: 1px solid white;
+    font-size: .6rem;
+}
+
 .shop-item {
     margin: 30px;
     align-content: center;
@@ -1030,15 +1037,13 @@ footer p {
     display: block;
     width: 100%;
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
 }
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: black;
 }
 
 .shop-items {
@@ -1058,13 +1063,12 @@ footer p {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: black;
 }
 
 .cart-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -1085,6 +1089,7 @@ footer p {
 
 .cart-quantity {
     width: 40%;
+
 }
 
 .cart-item-title {
@@ -1095,7 +1100,7 @@ footer p {
 .cart-item-image {
     width: 75px;
     height: auto;
-    border-radius: 10px;
+
 }
 
 .btn-danger {
@@ -1118,7 +1123,9 @@ footer p {
 }
 
 .cart-row:last-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #707070;
+    margin: 0 1rem 0 0;
+
 }
 
 .cart-row:last-child .cart-column {
@@ -1127,26 +1134,30 @@ footer p {
 
 .cart-total {
     text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 .cart-total-title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
     color: black;
-    margin-right: 20px;
+}
+.container .line{
+    margin: 0 1rem 0 0;
 }
 
-
 .cart-total-price {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.1rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .btn-purchase {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 3.2rem;
 }

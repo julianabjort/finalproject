@@ -16,14 +16,16 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img class="logo" src="Images/TM_logo1.png"></a>
+            <a href="index.html"><img class="logo" src="Images/TM_logo1.png" /></a>
             <div class="navbar topnavOverflow" id="myTopnav">
-                <a class="cartbtn" href="cart.html"><img class="cart" src="Images/cart.svg"></a>
+                <a class="cartbtn" id="cartbtn" href="#"><img class="cart" src="Images/cart.svg"></a>
+                <a class="mycart" href="cart.html">My cart</a>
                 <a class="mycart" href="cart.html">My cart</a>
                 <a href="about.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <div class="dropdown">
-                    <div class="dropbtn">Shop
+                    <div class="dropbtn">
+                        Shop
                         <i class="fa fa-caret-down"></i>
                     </div>
                     <div class="dropdown-content">
@@ -32,50 +34,84 @@
                     </div>
                 </div>
                 <a href="index.html">Home</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" id="click">&#9776;</a>
+                <a href="javascript:void(0);" style="font-size: 15px;" class="icon" id="click">&#9776;</a>
             </div>
         </nav>
     </header>
+
+       <div class="slide" id="slide">
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0<span>$</span></span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">
+                PURCHASE
+            </button>
+        </section>
+    </div>
+
+
     <div class="banner">
-        <img class="bannerImg" src="banner.png">
+        <img class="bannerImg" src="banner.png" />
     </div>
 
     <!--    Search bar    -->
 
     <div class="searchWrapper">
         <p class="searchText">Search item by keyword:</p>
-        <input oninput="searchByKeyword(this.value)" type="search" class="search searchByKeyword" placeholder="Keyword" onfocus="this.placeholder=''" onblur="this.placeholder='&#9740;Keyword'"><button class="reset_all greenbutton" onClick="window.location.reload();">&#10227;</button>
+        <input oninput="searchByKeyword(this.value)" type="search" class="search searchByKeyword" placeholder="Keyword" onfocus="this.placeholder=''" onblur="this.placeholder='Keyword'" />
+        <button class="reset_all greenbutton" onClick="window.location.reload();">
+            &#10226;
+        </button>
     </div>
 
     <section class="searchResultWrapper shopMain"></section>
 
     <!--    ########   -->
 
-    <main class="shopMain"></main>
+    <section class="shopMain"></section>
     <template id="oneItem">
-        <article class="shopBox">
-            <img class="oneImage">
-            <h2></h2>
-            <h4 class="price">$ <span></span></h4>
-            <a href="single-item.html?item_id=" class="whitebutton">View</a>
+        <article class="shop-items">
+            <div class="shop-item">
+                <img class="oneImage shop-item-image" />
+                <h1 class="shop-item-title"></h1>
+                <div class="price">Price: <span class="shop-item-price">price</span>$</div>
+                <a href="single-item.html?item_id=" class="whitebutton">View</a>
+                <button class="btn-primary shop-item-button" type="button">
+                    ADD TO CART
+                </button>
+            </div>
         </article>
     </template>
-    <footer>
 
+
+
+
+
+    <footer>
         <div>
             <h4>Privacy policy</h4>
             <h4>Terms and conditions</h4>
             <h4>Contact</h4>
         </div>
         <div class="info">
-            <a href="index.html"> <img class="footer-logo" src="Images/TM_logo1.png"></a>
+            <a href="index.html">
+                <img class="footer-logo" src="Images/TM_logo1.png" /></a>
             <div>
                 <a href="#" class="fa fa-facebook"></a>
-                <a href="#"><img src="tiktok.svg" alt="tiktok" class="tiktok"></a>
+                <a href="#"><img src="tiktok.svg" alt="tiktok" class="tiktok" /></a>
                 <a href="#" class="fa fa-instagram"></a>
             </div>
             <h5>Weekly Newsletter</h5>
-            <input class="btn" placeholder="NAME@EMAIL.COM"> <br>
+            <input class="btn" placeholder="NAME@EMAIL.COM" /> <br />
             <button class="btn subscribe">SUBSCRIBE</button>
         </div>
         <div>

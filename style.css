@@ -979,12 +979,6 @@ footer p {
     opacity: 100%;
 }
 
-.flex {
-    display: flex;
-    flex-flow: column;
-}
-
-
 .section-header {
     margin-top: 4rem;
     text-align: center;

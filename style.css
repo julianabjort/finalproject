@@ -702,7 +702,6 @@ footer > div {
     background-color: #f2f2f2;
     font-family: Brandon Grotesque, sans-serif;
     cursor: text;
-
 }
 
 .subscribe {
@@ -960,6 +959,13 @@ footer p {
 
     .rights {
         grid-area: 4 / 1;
+    }
+
+    .btn{
+    padding: 10px 0;
+    font-size: .5rem;
+    width: 200px;
+    color: #707070;
     }
 
     /* SHOPPING CART */

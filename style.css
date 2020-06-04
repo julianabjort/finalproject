@@ -1,5 +1,26 @@
 @import url("https://use.typekit.net/nfv6tjp.css");
 
+.slide {
+    padding: 7rem 0 0 1rem;
+    width: 30%;
+    background-color: pink;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition: slide 1s;
+    display: none;
+}
+
+.active {
+    display: block;
+    opacity: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-flow: column;
+}
+
 * {
     margin: 0;
     scroll-behavior: smooth;

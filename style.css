@@ -638,8 +638,15 @@ hr.line {
 }
 
 .itemQty {
-    width: 1.5rem;
+    width: 2.5rem;
+    text-align: center;
+    padding:.5rem;
 }
+
+.total{
+    text-align: right;
+}
+
 
 .cartItem .description {
     text-align: left;

@@ -205,3 +205,21 @@ function updateCartTotal() {
     document.getElementsByClassName("cart-total-price")[0].innerText =
         "$" + total;
 }
+
+
+
+var cartbtn = document.getElementById("cartbtn")
+cartbtn.onclick = function() {myFunction2()};
+
+function myFunction2() {
+  var element = document.getElementById("slide");
+
+  if (element.className === "slide") {
+    element.className += " active";
+  }
+  else{
+      element.classList.remove("active");
+
+  }
+}
+

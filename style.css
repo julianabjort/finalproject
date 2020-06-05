@@ -356,7 +356,7 @@ video {
 
 .oneImage {
     width: 200px;
-    padding: 20px;
+    padding: 25px 20px 5px;;
 }
 
 .banner {
@@ -1041,12 +1041,18 @@ footer p {
     width: 100%;
     text-align: center;
     color: black;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .shop-item-price {
     flex-grow: 1;
     color: black;
+    font-weight: 100;
+}
+
+.price{
+    font-weight: 100;
+    margin-bottom:1rem;
 }
 
 .shop-items {

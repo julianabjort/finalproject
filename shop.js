@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", ready);
 
 //SHOP ITEM//
-fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item/?per_page=100")
+fetch("https://andreimihutoni.com/wp_tate/wp-json/wp/v2/item/?per_page=100")
     .then((res) => res.json())
     .then(handleData);
 

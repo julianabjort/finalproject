@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", ready);
 
 //SHOP ITEM//
-fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item")
+fetch("http://andreimihutoni.com/wp_tate/wp-json/wp/v2/item/?per_page=100")
     .then((res) => res.json())
     .then(handleData);
 
@@ -10,21 +10,21 @@ function handleData(items) {
     items.forEach(showItems);
 }
 
-function showItems(item) {
-    console.log(item);
+function showItems(items) {
+//    console.log(items);
     const template = document.querySelector("template").content;
 
     const copy = template.cloneNode(true);
 
-    copy.querySelector(".oneImage").src = item.image.guid;
-    copy.querySelector("h2").textContent = item.title.rendered;
-    copy.querySelector(".price span").textContent = item.price;
-    copy.querySelector(".shop-item-button").id = item.id;
+    copy.querySelector(".oneImage").src = items.image.guid;
+    copy.querySelector("h2").textContent = items.title.rendered;
+    copy.querySelector(".price span").textContent = items.price;
+    copy.querySelector(".shop-item-button").id = items.id;
     copy
         .querySelector(".shop-item-button")
         .addEventListener("click", addToCartClicked);
     const a = copy.querySelector("a");
-    a.href += item.id;
+    a.href += items.id;
 
     document.querySelector(".shopMain").appendChild(copy);
 }

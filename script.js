@@ -38,6 +38,9 @@ function showFeedFrontPage(feed) {
             window.open("https://www.instagram.com/these.happy.doodles/", '_blank');
         })
 
+         clone.querySelector(".feedFrontPage").addEventListener('click', function () {
+            window.open("https://www.instagram.com/these.happy.doodles/", '_blank');
+        })
         document.querySelector(".instaFeedFrontPage").appendChild(clone);
     }
 }

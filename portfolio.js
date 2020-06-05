@@ -9,18 +9,21 @@ fetch(url)
 function handleInstagramData(feed) {
         console.log(feed.data)
 
-    for (let i = 0; i <= 50; i++) {
+    for (let i = 0; i <= 100; i++) {
         showFeedPortofolio(feed.data[i])
                 console.log(i)
     }
 }
+
+
+
 
 function showFeedPortofolio(feed) {
     const templatePortofolio = document.querySelector("#templateWrapperPortofolio").content;
     const clone = templatePortofolio.cloneNode(true);
 
      const caption = feed.caption;
-        console.log(caption)
+//        console.log(caption)
     const triggerCaption = caption.search("#thesehappydoodles")
 //    console.log(triggerCaption)
 

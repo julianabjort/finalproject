@@ -302,13 +302,20 @@ nav {
 
 .custom-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:;
-    margin: 0 10% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 5% 15%;
+
 }
-.custom-images img{
-    height: 30vh;
-    margin: 0 auto;
+
+.custom-images img {
+    width: 100%;
+}
+
+.custom-form {
+    width: 75%;
+}
+
 }
 
 input {
@@ -338,9 +345,11 @@ video {
     margin: 0 auto;
 }
 
-.contact {
-    margin-top: .5rem;
+.connect {
+
+    margin: .2rem 0 1rem 0;
 }
+
 
 /* SHOP */
 .shopMain {
@@ -378,11 +387,13 @@ a.whitebutton {
 .searchWrapper {
     margin: 2rem auto 0.5rem auto;
     text-align: right;
-     margin-right: 10%;
+    margin-right: 10%;
 }
-.searchText{
+
+.searchText {
     margin-bottom: .5rem;
 }
+
 .search {
     border: none;
     padding: .3rem 0 .3rem .3rem;
@@ -771,7 +782,7 @@ footer p {
     .navbar.responsive a.icon {
         position: absolute;
         right: 24px;
-        top:1rem;
+        top: 1rem;
     }
 
     .navbar.responsive a {
@@ -961,11 +972,11 @@ footer p {
         grid-area: 4 / 1;
     }
 
-    .btn{
-    padding: 10px 0;
-    font-size: .5rem;
-    width: 200px;
-    color: #707070;
+    .btn {
+        padding: 10px 0;
+        font-size: .5rem;
+        width: 200px;
+        color: #707070;
     }
 
     /* SHOPPING CART */
@@ -1022,7 +1033,7 @@ footer p {
     border: 1px solid black;
 }
 
-.shop-item-button{
+.shop-item-button {
     width: 100px;
     padding: 6px 15px;
     border: 1px solid white;
@@ -1144,7 +1155,8 @@ footer p {
     font-size: 1.5rem;
     color: black;
 }
-.container .line{
+
+.container .line {
     margin: 0 1rem 0 0;
 }
 

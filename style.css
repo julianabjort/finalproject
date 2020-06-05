@@ -304,16 +304,12 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
-    margin: 5% 15%;
+    margin: 7% 15%;
 
 }
 
 .custom-images img {
     width: 100%;
-}
-
-.custom-form {
-    width: 75%;
 }
 
 }

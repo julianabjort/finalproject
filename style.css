@@ -414,6 +414,10 @@ a.whitebutton {
     padding-right: 25%;
 }
 
+.singleInfo h1{
+    font-weight: 400;
+    font-family: Brandon Grotesque, sans-serif;
+}
 .singleImage {
     width: 90%;
     margin: 0 auto;
@@ -759,9 +763,8 @@ footer p {
 
     .navbar.responsive {
         position: absolute;
-        padding: 40px 20px 0 20px;
+        padding: 50px 20px 0 20px;
         right: 0;
-
         text-align: center;
         background-color: white;
     }
@@ -776,12 +779,14 @@ footer p {
         float: none;
         display: block;
         text-align: right;
-        padding-bottom: 0.7rem;
+        padding-bottom: 1.2rem;
+        font-size: .9rem;
     }
 
     .navbar.responsive .dropdown {
         float: none;
-        padding-bottom: 0.7rem;
+        padding-bottom: 1.2rem;
+        font-size: .9rem;
     }
 
     .navbar.responsive .dropdown-content {
@@ -791,6 +796,7 @@ footer p {
     .navbar.responsive .dropdown .dropbtn {
         display: block;
         text-align: right;
+        font-size: .9rem;
     }
 
     .navbar.responsive .cartbtn {
@@ -879,6 +885,8 @@ footer p {
     .footer-logo {
         width: 35vw;
     }
+
+
 }
 
 @media only screen and (max-width: 700px) {

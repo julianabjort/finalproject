@@ -439,7 +439,7 @@ a.whitebutton {
 /* PORTFOLIO */
 /* ↓ instagram long feed ↓ */
 
-.followMeOnInstagramWrapper h1 {
+.followMeOnInstagramWrapper h3 {
     padding-top: 10rem;
     text-align: center;
 }
@@ -888,7 +888,7 @@ footer p {
 
     h2,
     h3 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     h4,
@@ -1030,6 +1030,10 @@ footer p {
 .shop-item {
     margin: 0 30px;
     align-content: center;
+}
+
+.shop-item h3{
+    font-weight: 400;
 }
 
 .shop-item-title {

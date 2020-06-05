@@ -17,7 +17,7 @@ function showItems(items) {
     const copy = template.cloneNode(true);
 
     copy.querySelector(".oneImage").src = items.image.guid;
-    copy.querySelector("h2").textContent = items.title.rendered;
+    copy.querySelector("h3").textContent = items.title.rendered;
     copy.querySelector(".price span").textContent = items.price;
     copy.querySelector(".shop-item-button").id = items.id;
     copy
